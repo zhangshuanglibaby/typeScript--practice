@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-11 16:32:43
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-11 22:10:10
+ * @LastEditTime: 2022-11-11 22:30:59
  * @Description: 这是****文件
  */
 
@@ -71,3 +71,4 @@ num3 = test2
 
 // 注意： 如果tsconfig.json 开启了严格模式， null不能赋予void类型
 // 注意： 如果开启了严格模式，null和undefined 都不能赋值给其他类型的变量
+console.log('hello')
