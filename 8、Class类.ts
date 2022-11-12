@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-12 22:27:53
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-12 22:59:32
+ * @LastEditTime: 2022-11-12 23:14:11
  * @Description: 这是****文件
  */
 
@@ -141,6 +141,43 @@ class Man3 extends A4 implements PersonClass, PersonClass2 {
   }
   set () {
     console.log('set')
+  }
+}
+
+
+
+
+
+
+// 5. 抽象类  abstract
+/*
+  应用场景：如果你写的类实例化之后毫无用处，可以把它定义为抽象类
+  或者也可以把它作为一个基类 -> 通过继承一个派生类去实现基类的一些方法
+*/
+
+// 抽象类无法被实例化
+abstract class A5 {
+  name: string
+}
+// new A5()  会报错
+
+abstract class A6 {
+  name: string
+  constructor (name: string) {
+    this.name = name
+  }
+  set(): void {
+    console.log('111')
+  }
+  abstract getName(): string  // 定义的抽象方法必须在派生类中具体实现
+}
+
+class B6 extends A6 {
+  constructor () {
+    super('lili')
+  }
+  getName(): string {
+    return this.name
   }
 }
 
