@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-12 22:27:53
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-12 23:14:11
+ * @LastEditTime: 2022-11-14 10:43:35
  * @Description: 这是****文件
  */
 
@@ -181,4 +181,15 @@ class B6 extends A6 {
   }
 }
 
+
+class Point {
+  x: string
+  y: number
+  constructor(x: string, y: number) {
+    // 通过Object.assign方法，将x、y属性添加到 Point类的对象实例
+    Object.assign(this, { x, y })
+  }
+}
+let point1 = new Point('11', 22)
+console.log(point1, 'point1')
 
